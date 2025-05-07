@@ -19,6 +19,7 @@ def mydb():
         price_prd DECIMAL(10, 2) NOT NULL,
         stock INT NOT NULL)"""
     )
+    cr.execute("ALTER TABLE products ADD COLUMN rayon int")
 
     # Insert products:
     products = [
